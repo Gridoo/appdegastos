@@ -7,6 +7,7 @@ function tocar() {
     nombres.push=(x);
     pagos.push=(y);
     mostrar(x);
+    mostrar(y);
 }
 
 function mostrar (x) {
