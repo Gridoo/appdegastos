@@ -20,19 +20,26 @@
             <form>
                 <div class="form-row align-items-center">
                     <div class="col-sm-3 my-1">
-                        <label class="sr-only" for="inlineFormInputName">Nombre</label>
-                        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Ingrese su nombre">
+                        <label class="sr-only">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
                     </div>
                     <div class="col-sm-3 my-1">
-                        <label class="sr-only" for="inlineFormInputName">Gasto</label>
-                        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Ingrese el monto">
+                        <label class="sr-only">Gasto</label>
+                        <input type="number" class="form-control" id="pago" placeholder="Ingrese el monto">
                     </div>
                     <div class="col-auto my-1 pt-2">
-                        <button type="Enviar" class="btn btn-primary">Submit</button>
+                        <button type="button" value="Enviar" onclick="tocar()" id="toc"class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <div class="container-fluid">
+        <ul class="list-group p-3">
+            <li class="list-group-item">hola</li>
+            <li class="list-group-item">hola2</li>
+        </ul>
+    </div>
+    <script src="funcionalidad.js"></script>
 </body>
 </html>
