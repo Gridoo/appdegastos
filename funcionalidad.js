@@ -25,5 +25,6 @@ function recorrer(){
   for (let i = 0; i < pagos.length; i++) {
     suma += Number(pagos[i]);
   }
-  mostrar("el total acumulado es: $" + suma + " y cada uno tiene que aportar $" + suma/pagos.length);
+  num= suma/pagos.length;
+  mostrar("el total acumulado es: $" + suma + " y cada uno tiene que aportar $" + num.toFixed(2));
 }
