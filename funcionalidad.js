@@ -6,8 +6,7 @@ function tocar() {
     let y= document.getElementById("pago").value;
     nombres.push(x);
     pagos.push(y);
-    mostrar(x);
-    mostrar(y);
+    mostrar(x+": $"+y);
     recorrer();
 }
 
@@ -26,5 +25,5 @@ function recorrer(){
   for (let i = 0; i < pagos.length; i++) {
     suma += Number(pagos[i]);
   }
-  mostrar("el total acumulado es: " + suma);
+  mostrar("el total acumulado es: $" + suma + " y cada uno tiene que aportar $" + suma/pagos.length);
 }
