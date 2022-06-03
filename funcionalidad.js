@@ -12,12 +12,13 @@ function tocar() {
 }
 
 function mostrar (x) {
-  var newDiv = document.createElement("div");
-  var newContent = document.createTextNode(x);
+  let newDiv = document.createElement("li");
+  let newContent = document.createTextNode(x);
   newDiv.appendChild(newContent);
 
-  var currentDiv = document.getElementById("div1");
+  let currentDiv = document.getElementById("div1");
   document.body.insertBefore(newDiv, currentDiv);
+  newDiv.className += "list-group-item";
 }
 
 function recorrer(){
@@ -25,5 +26,5 @@ function recorrer(){
   for (let i = 0; i < pagos.length; i++) {
     suma += Number(pagos[i]);
   }
-  mostrar(suma);
+  mostrar("el total acumulado es: " + suma);
 }
