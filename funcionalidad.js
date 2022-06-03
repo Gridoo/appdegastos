@@ -4,10 +4,11 @@ const pagos=[];
 function tocar() {
     let x= document.getElementById("nombre").value;
     let y= document.getElementById("pago").value;
-    nombres.push=(x);
-    pagos.push=(y);
+    nombres.push(x);
+    pagos.push(y);
     mostrar(x);
     mostrar(y);
+    recorrer();
 }
 
 function mostrar (x) {
@@ -19,5 +20,10 @@ function mostrar (x) {
   document.body.insertBefore(newDiv, currentDiv);
 }
 
-console.log(nombres);
-console.log(pagos);
+function recorrer(){
+  let suma=0;
+  for (let i = 0; i < pagos.length; i++) {
+    suma += Number(pagos[i]);
+  }
+  mostrar(suma);
+}
